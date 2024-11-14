@@ -1,0 +1,46 @@
+#panel {
+  margin: 15vmin 5vmin 0 5vmin;
+  background-color: rgb(49, 45, 45);
+  border: solid rgb(46, 46, 68) 4px;
+  padding: 0 5vmin 0 5vmin;
+  height: 10vmin;
+  border-radius: 2vmin;
+  align-content: center;
+}
+
+
+span {
+  color: white;
+  font-size: xx-large;
+  margin-right: 2vmin;
+}
+
+#create-button {
+  height: 5vmin;
+  width: 10vmin;
+  font-size: larger;
+  font-weight: 700;
+  cursor: pointer;
+  background-color: yellow;
+  color: rgb(49, 45, 45);
+}
+
+.team-cont {
+  margin: 3vmin 5vmin 0 5vmin;
+  background-color: brown;
+  padding: 5vmin 3vmin;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border: solid 4px black;
+  border-radius: 2vmin;
+}
+.poke-image {
+  height: 25vmin;
+  width: 25vmin;
+  border: solid 2px rgb(46, 46, 68);
+  border-radius: 2vmin;
+  background-color: rgb(49, 45, 45);
+  margin: 1vmin 0;
+}

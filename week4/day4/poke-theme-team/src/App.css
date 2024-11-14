@@ -1,0 +1,26 @@
+
+
+.form-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+.subButton {
+    background-color: red;
+}
+
+.drop {
+    height: 5vmin;
+    background-color: black;
+    color: white;
+    border: solid white 1px;
+    width: 80vmin;
+    text-align: center;
+    font-weight: 700;
+}

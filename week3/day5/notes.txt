@@ -1,0 +1,26 @@
+http://190.1.2.5.8/ First client/server handshake.
+
+HTTP: Hyper Text Transfer Protocol 
+    -Modern equivalent is html
+
+GET-retrieve recourse
+POST-send a resource
+PUT-update a resource
+DELETE-delete a resource
+
+URI= Uniform resource idenetifier
+
+URN
+
+URL 
+
+fetch('http://example.com/bio.html',{
+    shoes: 'Jordans',
+    color: 'red'
+    })
+
+    body=request.body
+    shoes, color = {**body}
+    Shoes.query.filter(type=shoes, color=color)   #select * from shoes where type = Jordan AND color = red;
+
+    http://190.1.2.5.8/bio.html?

@@ -1,0 +1,7 @@
+Classes:
+
+Four pillars of OOP:
+    Encapsulation: Specific data can be restricted from the rest of your code.
+    Abstraction: Logic and complexity is hidden for simplicity
+    Inheritance: Sharing of similar features and attrs
+    Polymorphism: Objects can take different forms depending on their needs

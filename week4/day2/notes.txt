@@ -1,0 +1,3 @@
+Hooks and Components:
+
+useState is a function/reacthook takes a variable and function that returns the function to set the variable

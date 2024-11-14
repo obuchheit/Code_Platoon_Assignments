@@ -1,0 +1,35 @@
+[
+{
+  "model": "pokemon_app.pokemon",
+  "pk": 1,
+  "fields": {
+    "name": "Pikachu",
+    "level": 12,
+    "date_encountered": "2015-01-01",
+    "captured": false,
+    "description": null
+  }
+},
+{
+  "model": "pokemon_app.pokemon",
+  "pk": 2,
+  "fields": {
+    "name": "Pikachu",
+    "level": 12,
+    "date_encountered": "2015-01-01",
+    "captured": false,
+    "description": null
+  }
+},
+{
+  "model": "pokemon_app.pokemon",
+  "pk": 3,
+  "fields": {
+    "name": "Charizard",
+    "level": 30,
+    "date_encountered": "2015-01-01",
+    "captured": false,
+    "description": null
+  }
+}
+]

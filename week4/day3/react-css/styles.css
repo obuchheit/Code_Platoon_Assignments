@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+}
+.container {
+    font-size: 0;
+}
+.box{
+    display: inline-block;
+    border: solid black 2px;
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.float-box {
+    float: left;
+}
+
+.text {
+    clear: left;
+}
+
+.container1{
+    height: 200px;
+    overflow: scroll;
+
+}

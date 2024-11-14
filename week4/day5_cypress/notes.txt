@@ -1,0 +1,4 @@
+Types of Tests:
+-Unit Tests
+-Integaration Tests
+-End-to-End Tests

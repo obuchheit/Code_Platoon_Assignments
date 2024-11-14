@@ -1,0 +1,9 @@
+.panel {
+  margin: 5vmin 10vmin 10vmin 10vmin;
+  padding-left: 8vmin;
+  background-color: rgba(165, 42, 42, 0.527);
+  height: 10vmin;
+  align-content: center;
+  border: solid 3px rgb(73, 112, 73);
+  border-radius: 2vmin;
+}

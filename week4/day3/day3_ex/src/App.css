@@ -1,0 +1,81 @@
+body{
+    margin: 0;
+}
+
+
+.anImg{
+    height: 250px;
+    width: 250px;
+    background-color: brown;
+}
+
+.floatMeRight {
+    float: left;
+}
+
+.textBlock {
+    font-size: 24px;
+    clear: left;
+}
+
+.outer {
+    height: 400px;
+    width: 400px;
+    background-color: black;
+    position: relative;
+}
+
+.middle{
+    height: 300px;
+    width: 300px;
+    background-color: green;
+}
+
+.inner {
+    height: 50px;
+    width: 50px;
+    background-color: red;
+    position: absolute;
+    right: 5px;
+    bottom: 10px;
+}
+
+.container {
+    height: 125px;
+    width: 1000px;
+    border: red dashed 5px;
+    overflow: scroll;
+}
+
+
+#thebox {
+    background-color: yellow;
+    /* position: fixed;
+    top: 25px;
+    left: 50px; */
+}
+
+#thebox:hover {
+    background-color: red;
+    height: 125px;
+
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    border: solid black 1px;
+    margin: 10px;
+    padding: 0px;
+    display: inline-block;
+}
+
+a:hover{
+    color: green;
+}
+
+
+#measurements {
+    border: solid 5px black;
+    height: 50vh;
+}

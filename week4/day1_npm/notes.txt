@@ -1,0 +1,11 @@
+Axios:
+    -Makes request 
+    -essentially does the same thing as fetch
+
+Package.json is a mop for package-lock.json... don't touch lock
+
+When the client runs npm install for your project it will run thrrough the package.json IOT install dependancies.
+
+Use axios for simple_market
+
+Vite-Makes the server times faster and code simpler IOT run React

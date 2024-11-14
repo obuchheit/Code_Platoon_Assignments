@@ -1,0 +1,9 @@
+Front-end: html/css, react
+
+Server with flask
+
+Postgresql database
+
+
+front-end reaches out to the server and requests for what to render(ie. index.html)
+Could request the server to authenticate/server then reaches into the database and then returns the information.

@@ -1,0 +1,20 @@
+DOM: Document object model
+
+document.body.children[0].children[0].children[1]
+
+onclick='function_name'
+
+getElementsByClassName -returns an array of elements with class
+
+document.querySelector(".classname")
+    'only grabs the first instance'
+
+document.querySelectorAll(".classname")
+    'Grabs all instances'
+
+Event Propagation:
+    -evt.stopPropagation() prevents the calling of any functions from the parent tag when you call the children// Goes into the child that you call.
+    -"Event" must be inserted in the arguments of all parent child functions
+
+
+Forms:

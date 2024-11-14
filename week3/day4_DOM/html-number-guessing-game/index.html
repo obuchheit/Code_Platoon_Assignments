@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+    <title>Guessing Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Your link to your CSS file -->
+    <link rel="stylesheet" href="">
+    <!-- Your Javascript file goes here -->
+    <script src="app.js" async defer></script>
+  </head>
+
+  <header>
+    <form onsubmit="newGame(event)">
+      <button id="new-game" type="submit">New Game</button>
+    </form>
+  </header>
+  <body>
+    <nav>
+      <h1>Let's Play the Guessing Number Game!</h1>
+    </nav>
+    <div>
+      <div>
+        <form id="guesser">
+          <input type="input" onsubmit="formSubmit()" name="guess" id="guess-input" placeholder="Guess between 1-100.">
+          <button id="guess-button" type="submit">Submit</button>
+        </form>
+      </div>
+      <div>
+        <p id="current-result"></p>
+      </div>
+    </div>
+
+    <div>
+      <h2>Guesses so far:</h2>
+      <p id="guesses"></p>
+    </div>
+
+  </body>
+</html>
