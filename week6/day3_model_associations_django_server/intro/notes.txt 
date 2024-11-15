@@ -1,0 +1,125 @@
+Imports for tests
+
+from django.test import TestCase
+from .models import YourModel
+from django.core.exceptions import ValidationError
+
+    Try Except Block:
+        code for testing
+
+        try:
+            something.full_clean()
+            self.assert
+        except ValidationError as e:
+
+
+
+Imports for Serializers
+
+from rest_framework import serializers
+from .models import Model
+
+
+Associations (ie. Relationships in RDBMs)
+
+    #one-to-one
+    models.OneToOneField("Model") == ONE to ONE 
+    models.OneToOneField(Traveler)
+
+    #many-to-one
+    models.ForeignKey("MOdel") == MANY to ONE
+    owner = models.ForeignKey(Traveler)
+
+    #many-to-many  
+    models.ManyToManyField("Model") == MANY to MANY
+    passenger = models.ManyToMany(Traveler) 
+
+
+Associations Example:
+
+from django.db import models
+
+class Person(models.Model):
+    name = models.CharField()
+
+class Profile(models.Model):
+    bio = models.TextField()
+    person = models.OneToOneField(Person, on_delete=models.CASCADE)
+
+
+
+serializer.app(for Associations ex.):
+
+from rest_framework import Serializers
+from .models import Person, Profile
+
+class ProfileSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Profile
+        exclude = ['person']
+
+class PersonSerializer(serializers.ModelSerializer):
+    profile = ProfileSerializer()
+    class Meta:
+        model = Person
+        fields = ['id', 'name', 'profile']
+
+
+
+nEXT ex.
+
+class Author(models.Model):
+    name = models.CharField()
+    ###novels = [] #You wouldn't write this. related_name='novels' imports it there.
+
+class Book(models.Model):
+    title = models.CharField()
+    author = models.ForeignKey(Author, on_delete=models.CASCADE, related_name='novels')
+
+serializer.app:
+
+class BookSerializer(serializers.ModelSerializer):
+    author = serializers.SerializerMethodField() #Turns author from its 'id' to the actual info of the author
+    class Meta:
+        model = Book
+        fields = ['id', 'title', 'author']
+
+    def get_author(self, instance):
+        author_name = instance.author.name
+        return author_name
+
+class AuthorSerializer(serializers.ModelSerializer):
+    novels = serializers.SerializerMethodField()
+    class Meta:
+        model = Author
+        fields = ['id', 'name', 'novels']
+
+    def get_novels(self, instance):          #Naming convention must be the same as the onetomany Relationship
+        books = instance.novels.all()
+        ser_books = [{'id': book.id, 'title': book.title} for book in books]
+        return ser_books
+
+
+
+Many to Many:
+
+
+
+
+Django Server:
+
+python manage.py runserver
+
+in urls.py//
+
+from django.contrib import admin
+from django.urls import path
+from django.http import HttpResponse
+
+def square_area_view(request):
+    return 
+
+urlpatterns = [
+    path('my-special-admin/', admin.site.urls),
+    path('squares/', square_area_view)
+]
